@@ -78,6 +78,10 @@ nav a:hover {
     border: 1px solid var(--text-color);
 }
 
+section ul {
+    line-height: 30px;
+}
+
 footer {
     background-color: var(--background-color);
     color: var(--text-color);
