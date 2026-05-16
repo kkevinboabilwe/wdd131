@@ -1,10 +1,53 @@
+/* :root {
+    --primary-color: white;
+    --background-color: #333;
+    --nav-background-color: black;
+} */
+
 body {
     display: grid;
-    background-color: aqua;
+    background-color: white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    grid-column: 1/3;
+}
+
 nav {
     display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 50px 0 0;
+}
+
+a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: lightgray;
+    grid-column: 1/2;
+    padding: 5px 50px 200px 10px;
+}
+
+aside {
+    grid-column: 2/3;
+    padding: 0 0 0 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0 0 100px 0;
+    grid-column: 1/3;
 }

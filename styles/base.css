@@ -1,0 +1,90 @@
+:root {
+    --background-color: royalblue;
+    --text-color: white;
+    --padding-standard: 5px;
+    --text-align-standard: center;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: var(--text-align-standard);
+}
+
+main {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: var(--padding-standard);
+}
+
+img {
+    float: right;
+}
+
+h1 {
+    text-align: var(--text-align-standard);
+    grid-column: 1/4;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: var(--text-align-standard);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0 0 5px;
+}
+
+h3 {
+    text-align: var(--text-align-standard);
+    text-decoration: underline;
+}
+
+#course-title {
+    display: block;
+}
+
+nav {
+    text-decoration: none;
+    justify-content: space-evenly;
+    background-color: black;
+    color: var(--text-color);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    border: 1px solid var(--text-color);
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: var(--text-align-standard);
+    padding: var(--padding-standard);
+}
+
+#lastModified {
+    color: yellow;
+}
